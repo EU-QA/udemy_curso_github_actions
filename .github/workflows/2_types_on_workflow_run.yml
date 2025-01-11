@@ -3,8 +3,8 @@ run-name: Running - Workflow run Types
 on: 
   workflow_run:
     workflows: [GitHub Actions - Trigger 1]
-    types: [completed]
-    # types: [requested]
+    # types: [completed]
+    types: [requested]
     # types: [in_progress]
     # types: [completed, requested, in_progress]
 jobs:
