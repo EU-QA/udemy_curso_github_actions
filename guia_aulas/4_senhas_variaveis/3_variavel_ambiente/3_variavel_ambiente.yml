@@ -1,0 +1,20 @@
+name: Set Environment Variable
+
+on:
+  push:
+    branches:
+      - main  # Substitua pela branch desejada
+
+jobs:
+  print-variable:
+    runs-on: ubuntu-latest
+
+    env:
+      MY_VARIABLE: "Hello, World!"  # Define a variável de ambiente
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Print environment variable
+        run: echo "The value of MY_VARIABLE is: $MY_VARIABLE"
