@@ -1,5 +1,5 @@
-name: GitHub Actions - Configuração de Variavel de Repositório
-run-name: Running - Var Repo Config
+name: GitHub Actions - Configuração de Variavel de Ambiente
+run-name: Running - ENV Var Repo Config
 on: [push, workflow_dispatch]
 env:
   variavel: "Bom dia"
