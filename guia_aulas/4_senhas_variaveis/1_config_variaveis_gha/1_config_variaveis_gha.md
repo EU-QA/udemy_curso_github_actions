@@ -11,4 +11,4 @@
 - Actions
 
 ## Exemplos
-- 1_config_secret_gha.yml
+- 1_config_variaveis_gha.yml
