@@ -8,3 +8,4 @@ jobs:
       - name: Comentário
         run: |
           echo "Trigger finalizado"
+          exit 1

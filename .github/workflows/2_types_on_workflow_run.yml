@@ -14,4 +14,3 @@ jobs:
       - name: Comentário
         run: |
           echo "Workflow que foi trigado"
-          exit 1
