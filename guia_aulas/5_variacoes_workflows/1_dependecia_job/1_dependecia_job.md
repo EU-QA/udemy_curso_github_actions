@@ -1,14 +1,8 @@
 # Dependência dentro do job
-- [Variáveis](https://docs.github.com/pt/actions/writing-workflows/choosing-what-your-workflow-does/store-information-in-variables)
+- [Dependência de jobs](https://docs.github.com/pt/actions/writing-workflows/choosing-what-your-workflow-does/using-jobs-in-a-workflow)
 
-## O que é uma varíavel de repositório?
-- É uma varíavel configurada no repositório do Github e todos os workflows conseguem utilizada.
-- Como esta variável não é protegida, é possível ver seus valor no log de execução
-
-## Configuração
-- Setting
-- Secrets and variables
-- Actions
+## O que é dependência entre jobs?
+- É uma configuraçào de pré requisitos que você consegue estipular para a execução dos seus jobs
 
 ## Exemplos
-- 1_config_variaveis_gha.yml
+- 1_dependecia_job.yml
