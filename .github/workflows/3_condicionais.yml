@@ -1,6 +1,7 @@
 name: GitHub Actions - Condicionais
 run-name: Running - ${{ github.event_name }}
-on: [push, workflow_dispatch]  
+on: [push, workflow_dispatch]
+
 jobs:
   on-push-only:
     if: ${{ github.event_name == 'push' }}
