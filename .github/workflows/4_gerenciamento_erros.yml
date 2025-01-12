@@ -26,3 +26,16 @@ jobs:
         if: always()
         run: |
           echo Comentário após o erro
+
+  job_3_continue_on_error:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Comentário
+        run: |
+          echo Comentário antes do erro
+          exit 1
+        continue-on-error: true
+
+      - name: Comentário
+        run: |
+          echo Comentário após o erro
