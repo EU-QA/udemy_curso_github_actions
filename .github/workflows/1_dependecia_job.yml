@@ -11,7 +11,7 @@ jobs:
           echo "Execução Setup"
 
   test_api:
-    needs: test_unit
+    # needs: test_unit
     runs-on: ubuntu-20.04
     steps:
       - name: Comentário
