@@ -10,7 +10,6 @@ jobs:
         run: |
           echo Comentário antes do erro
           exit 1
-
       - name: Comentário
         run: |
           echo Comentário após o erro
