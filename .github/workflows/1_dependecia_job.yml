@@ -19,7 +19,7 @@ jobs:
           echo "Execução test"
   
   test_ui:
-    needs: [setup, test_api]
+    needs: [test_api]
     runs-on: ubuntu-20.04
     steps:
       - name: Comentário
