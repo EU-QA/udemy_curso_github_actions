@@ -3,6 +3,7 @@ run-name: Running - Gerenciamento de erros
 on: [push, workflow_dispatch]
 
 jobs:
+
   job_1_erro:
     runs-on: ubuntu-20.04
     steps:
@@ -27,9 +28,15 @@ jobs:
         run: |
           echo Comentário após o erro
   
-  on_workflow_dispatch_only:
+  job_3_continue_on_erro:
     runs-on: ubuntu-20.04
     steps:
       - name: Comentário
         run: |
-          echo ${{ github.event_name }}
+          echo Comentário antes do erro
+          exit 1
+        continue-on-error: true
+        
+      - name: Comentário
+        run: |
+          echo Comentário após o erro
